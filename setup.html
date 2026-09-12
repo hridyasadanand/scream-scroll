@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scream Scroll Setup</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    h1 { color: #ff3333; font-size: 40px; }
+    button {
+      background-color: #ff3333;
+      color: white;
+      border: none;
+      padding: 20px 40px;
+      font-size: 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.1s;
+      margin-top: 20px;
+    }
+    button:hover { transform: scale(1.05); }
+    #status { margin-top: 20px; font-size: 20px; color: #aaa; }
+  </style>
+</head>
+<body>
+  <h1>🎤 WE NEED TO HEAR YOU SCREAM</h1>
+  <p>Chrome requires you to grant microphone permission on a full page.</p>
+  <p>Click the button below and click <strong>Allow</strong> in the top left corner.</p>
+  
+  <button id="allow-btn">GRANT PERMISSION</button>
+  <div id="status"></div>
+
+  <script src="setup.js"></script>
+</body>
+</html>

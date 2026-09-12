@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SCREAM SCROLL</h1>
+    <p class="subtitle">Your voice is now your mouse.</p>
+    
+    <button id="start-btn" class="big-btn">🎤 START SCREAMING</button>
+    <button id="stop-btn" class="big-btn stop-btn hidden">⏹ STOP</button>
+    
+    <div class="status-box">
+      <p>Status: <span id="status-text">INACTIVE</span></p>
+      <p>Scream Power:</p>
+      <div class="progress-bar">
+        <div id="power-fill" class="progress-fill"></div>
+      </div>
+      <p id="power-text">0%</p>
+      <p>Scroll Speed: <span id="speed-text">NONE</span></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
